@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--body-font: "Open Sans", sans-serif;
+	--color-1: #c4d600;
+	--color-2: #43b02a;
+	--color-3: #046a38;
+	--color-4: #2c5234;
+	--color-5: #86bc25;
+	--bg-color: #000000;
+	--primary-color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	border: 0;
+}
+
+html {
+	width: 100%;
+}
+
+html,
+body {
+}
+
+body {
+	box-sizing: border-box;
+	font-family: var(--body-font);
+	background-color: var(--bg-color);
+	color: var(--primary-color);
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.left-content {
+	@apply w-5/12 h-full flex flex-col items-start justify-center;
+}
+
+.right-content {
+	@apply w-7/12 h-full flex flex-col items-start justify-center;
+}
