@@ -1,0 +1,18 @@
+.before {
+  height: 100%;
+  position: relative;
+  @apply bg-secondary-500;
+}
+.text {
+  margin-left: 1.5rem;
+  @apply text-xl;
+}
+.text::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  @apply bg-secondary-500;
+}
