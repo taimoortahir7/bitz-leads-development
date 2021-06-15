@@ -46,3 +46,7 @@ body {
 .right-content {
 	@apply w-7/12 h-full flex flex-col items-start justify-center;
 }
+
+.centered {
+	margin: 0 auto !important;
+}

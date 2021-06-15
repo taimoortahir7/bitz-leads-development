@@ -16,7 +16,7 @@ const NAV_LINKS = [
 
 const Navbar = () => {
 	return (
-		<div className="absolute container flex items-center justify-between px-2 py-4 mt-4">
+		<div className="absolute container flex items-center justify-between px-2 py-4 mt-4 z-50">
 			<div className="">
 				<img
 					src="/images/logo.png"
@@ -35,8 +35,8 @@ const Navbar = () => {
 const NavItem = ({ border, path, name }) => {
 	return (
 		<div
-			className={` px-6 py-2 border border-solid border-${
-				border ? "secondary-500" : "transparent"
+			className={` px-6 py-2  ${
+				border ? "border border-solid border-secondary-500" : ""
 			}`}
 		>
 			<Link href={path ? path : "#"}>{name}</Link>{" "}
