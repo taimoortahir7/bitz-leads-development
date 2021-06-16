@@ -1,84 +1,70 @@
 import Title from "components/shared/Title";
 
 const Tech = () => {
-	return (
-		<>
-			<div className="left-content">
-				<Title content="The Technology" />
-				<div className="relative w-4/5 h-2/5 mt-32">
-					<div className="absolute h-3/4 w-full bg-secondary-500 -left-4 -bottom-2 hidden"></div>
-					<img
-						src="/images/tech.pngg"
-						alt="the technology"
-						className="object-cover object-center z-10 absolute h-3/4 w-full"
-					/>
-				</div>
-			</div>{" "}
-			<div className="right-content">
-				<div className="mt-8 text-xl font-normal">
-					BlitzLeads&reg; is an automated lead generation solution
-					for:
-				</div>{" "}
-				<div className="text-xl font-semibold mt-8">
-					<div className="">
-						<img
-							src="/images/icons/Vector.png"
-							alt=""
-							className="relative inline mr-4"
-						/>
-						Home-Based Sales Producers
-					</div>{" "}
-					<div className="">
-						<img
-							src="/images/icons/Vector.png"
-							alt=""
-							className="relative inline mr-4"
-						/>
-						Small businesses and Teams{" "}
-					</div>{" "}
-				</div>{" "}
-				<div className="mt-8 text-xl font-normal">
-					Leading with metrics, BlitzLeads & reg; provides fully
-					automated <br />
-					business Development capacity, acting as a mobile force{" "}
-					<br />
-					multiplier.Remote revenue generation and every stage of
-					<br />
-					the sales pipeline are addressed through simplified <br />
-					functionality.{" "}
-				</div>
-				<div className="mt-16 relative flex flex-row items-center space-x-3">
-					<img
-						src="/images/icons/Group 25.png"
-						alt="generate leads"
-					/>
-					<img
-						src="/images/icons/Group 30.png"
-						alt="engage prospects"
-					/>
-					<img src="/images/icons/Group 31.png" alt="manage sales" />
-					<img
-						src="/images/icons/Group 32.png"
-						alt="negotiate prices"
-					/>
-					<img
-						src="/images/icons/Group 33.png"
-						alt="measure performance"
-					/>
-				</div>
-			</div>{" "}
-		</>
-	);
+  return (
+    <>
+      <div className="left-content">
+        <Title content="The Technology" />
+        <div className="relative w-4/5 h-2/5 mt-32">
+          <div className="absolute h-3/4 w-full bg-secondary-500 -left-4 -bottom-2 hidden"></div>
+          <img
+            src="/images/tech.png"
+            alt="the technology"
+            className="object-contain object-center"
+          />
+        </div>
+      </div>{" "}
+      <div className="right-content">
+        <div className="mt-8 text-xl font-normal mt-32">
+          BlitzLeads&reg; is an automated lead generation solution for:
+        </div>{" "}
+        <div className="text-xl font-semibold mt-8">
+          <div className="">
+            <img
+              src="/images/icons/Vector.png"
+              alt=""
+              className="relative inline mr-4"
+            />
+            Home-Based Sales Producers
+          </div>{" "}
+          <div className="">
+            <img
+              src="/images/icons/Vector.png"
+              alt=""
+              className="relative inline mr-4"
+            />
+            Small businesses and Teams{" "}
+          </div>{" "}
+        </div>{" "}
+        <div className="mt-8 text-xl font-normal">
+          Leading with metrics, BlitzLeads & reg; provides fully automated{" "}
+          <br />
+          business Development capacity, acting as a mobile force <br />
+          multiplier.Remote revenue generation and every stage of
+          <br />
+          the sales pipeline are addressed through simplified <br />
+          functionality.{" "}
+        </div>
+        <div className="mt-16 relative flex flex-row items-center space-x-3">
+          <img src="/images/icons/Group 25.png" alt="generate leads" />
+          <img src="/images/icons/Group 30.png" alt="engage prospects" />
+          <img src="/images/icons/Group 31.png" alt="manage sales" />
+          <img src="/images/icons/Group 32.png" alt="negotiate prices" />
+          <img src="/images/icons/Group 33.png" alt="measure performance" />
+        </div>
+      </div>{" "}
+    </>
+  );
 };
 
 const Card = ({ src, text }) => {
-	return (
-		<div className="relative flex items-center justify-center flex-col">
-			<img src="/images/Border.png" alt="border" className="absolute" />
-			<img src={src} alt="ico" />
-			<div className="w-2/4 text-center">{text}</div>
-		</div>
-	);
+  return (
+    <div className="relative flex items-center justify-center flex-col">
+      <img src="/images/Border.png" alt="border" className="absolute" />
+      <img src={src} alt="ico" />
+      <div className="w-2/4 text-center">{text}</div>
+    </div>
+  );
 };
 
 export default Tech;
