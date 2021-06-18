@@ -29,7 +29,9 @@ html {
 html,
 body {
 }
-
+section {
+  @apply min-h-screen my-8 lg:my-auto;
+}
 body {
   box-sizing: border-box;
   font-family: var(--body-font);
@@ -40,11 +42,11 @@ body {
 }
 
 .left-content {
-  @apply w-6/12 h-full flex flex-col items-start justify-center;
+  @apply w-full lg:w-6/12 h-full flex flex-col items-start justify-center;
 }
 
 .right-content {
-  @apply w-6/12 h-full flex flex-col items-start justify-center;
+  @apply w-full lg:w-6/12 h-full flex flex-col items-start justify-center;
 }
 
 .centered {

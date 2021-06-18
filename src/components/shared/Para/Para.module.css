@@ -4,8 +4,7 @@
   @apply bg-secondary-500;
 }
 .text {
-  margin-left: 1.5rem;
-  @apply text-xl;
+  @apply text-base lg:text-xl ml-2 lg:ml-6;
 }
 .text::before {
   content: " ";

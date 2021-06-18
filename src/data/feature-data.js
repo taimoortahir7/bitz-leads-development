@@ -2,7 +2,7 @@ export const FEATURE_DATA = [
   {
     title: "Generate Leads",
     text:
-      "Execute targetted outbound searches like a /n pro with simple search criteria. Accomplish more with Smart tools and AI",
+      "Execute targetted outbound searches like a pro with simple search criteria. Accomplish more with Smart Tools and AI.",
     img: {
       normal: "/images/sections/first.png",
       mobile: "/images/sections/first-mobile.png",
@@ -12,7 +12,7 @@ export const FEATURE_DATA = [
   {
     title: "Engage Prospects",
     text:
-      "Easily create automated campaigns, schedule calls and appoitments. Use chat, voice or video to communicate",
+      "Easily create automated campaigns, schedule calls and appointments. Use chat, voice or video to communicate",
     img: {
       normal: "/images/sections/second.png",
       mobile: "/images/sections/second-mobile.png",
@@ -20,9 +20,9 @@ export const FEATURE_DATA = [
     float: "right",
   },
   {
-    title: "Negotiate Prices",
+    title: "Manage Sales",
     text:
-      "Set pricing and conduct simultaneous negotiations automatically. Get notified of successful deals in realtime",
+      "Visualize pipeline status. Prioritize next actions for maximum impact. Assign leads and collaborate with peers.",
     img: {
       normal: "/images/sections/third.png",
       mobile: "/images/sections/third-mobile.png",
@@ -30,9 +30,9 @@ export const FEATURE_DATA = [
     float: "left",
   },
   {
-    title: "Generate Leads",
+    title: "Negotiate Prices",
     text:
-      "Execute targetted outbound searches like a /n pro with simple search criteria. Accomplish more with Smart tools and AI",
+      "Set pricing and conduct simultaneous negotiations automatically. Get notified of successful deals in realtime.",
     img: {
       normal: "/images/sections/fourth.png",
       mobile: "/images/sections/fourth-mobile.png",
@@ -42,7 +42,7 @@ export const FEATURE_DATA = [
   {
     title: "Measure Performance",
     text:
-      "Visualize critical metrics on one dashboard. Evaluate and manage teams. Implemet necessary actions",
+      "Visualize critical metrics on one dashboard. Evaluate and manage teams.Implement necessary actions.",
     img: {
       normal: "/images/sections/fifth.png",
       mobile: "/images/sections/fifth-mobile.png",

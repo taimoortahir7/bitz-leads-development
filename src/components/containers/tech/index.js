@@ -5,52 +5,69 @@ const Tech = () => {
     <>
       <div className="left-content">
         <Title content="The Technology" />
-        <div className="relative w-4/5 h-2/5 mt-32">
-          <div className="absolute h-3/4 w-full bg-secondary-500 -left-4 -bottom-2 hidden"></div>
+        <div className="relative w-4/5 h-2/5 mt-32 hidden lg:block">
           <img
             src="/images/tech.png"
             alt="the technology"
-            className="object-contain object-center"
+            className="object-contain object-center invisible lg:visible"
           />
         </div>
-      </div>{" "}
+      </div>
       <div className="right-content">
-        <div className="mt-8 text-xl font-normal mt-32">
-          BlitzLeads&reg; is an automated lead generation solution for:
-        </div>{" "}
-        <div className="text-xl font-semibold mt-8">
-          <div className="">
-            <img
-              src="/images/icons/Vector.png"
-              alt=""
-              className="relative inline mr-4"
-            />
-            Home-Based Sales Producers
-          </div>{" "}
-          <div className="">
-            <img
-              src="/images/icons/Vector.png"
-              alt=""
-              className="relative inline mr-4"
-            />
-            Small businesses and Teams{" "}
-          </div>{" "}
-        </div>{" "}
-        <div className="mt-8 text-xl font-normal">
-          Leading with metrics, BlitzLeads & reg; provides fully automated{" "}
-          <br />
-          business Development capacity, acting as a mobile force <br />
-          multiplier.Remote revenue generation and every stage of
-          <br />
-          the sales pipeline are addressed through simplified <br />
-          functionality.{" "}
+        <div className="mt-4 text-normal lg:text-xl font-normal lg:mt-32">
+          BlitzLeads® is an Automated Lead Generation solution for:
         </div>
-        <div className="mt-16 relative flex flex-row items-center space-x-3">
-          <img src="/images/icons/Group 25.png" alt="generate leads" />
-          <img src="/images/icons/Group 30.png" alt="engage prospects" />
-          <img src="/images/icons/Group 31.png" alt="manage sales" />
-          <img src="/images/icons/Group 32.png" alt="negotiate prices" />
-          <img src="/images/icons/Group 33.png" alt="measure performance" />
+        <div className="text-normal lg:text-xl font-semibold mt-4 lg:mt-8">
+          <div className="">
+            <img
+              src="/images/icons/Vector.png"
+              alt=""
+              className="relative inline mr-4"
+            />
+            Home-based Sales Producers
+          </div>
+          <div className="">
+            <img
+              src="/images/icons/Vector.png"
+              alt=""
+              className="relative inline mr-4"
+            />
+            Small Businesses and Teams
+          </div>
+        </div>
+        <div className="mt-2 lg:mt-8 text-normal lg:text-xl font-normal">
+          Leading with metrics,BlitzLeads® provides fully automated
+          <br /> Business Development capacity, acting as a mobile force
+          <br /> multiplier. Remote Revenue Generation and every stage of
+          <br /> the Sales pipeline are addressed through simplified
+          <br /> functionality.
+        </div>
+        <div className="mt-16 relative flex flex-row flex-wrap lg:flex-nowrap justify-center items-center space-x-3">
+          <img
+            src="/images/icons/Group 25.png"
+            alt="generate leads"
+            className="object-center object-cover w-20 lg:w-28"
+          />
+          <img
+            src="/images/icons/Group 30.png"
+            alt="engage prospects"
+            className="object-center object-cover w-20 lg:w-28"
+          />
+          <img
+            src="/images/icons/Group 31.png"
+            alt="manage sales"
+            className="object-center object-cover w-20 lg:w-28"
+          />
+          <img
+            src="/images/icons/Group 32.png"
+            alt="negotiate prices"
+            className="object-center object-cover mt-4 lg:mt-0 w-20 lg:w-28"
+          />
+          <img
+            src="/images/icons/Group 33.png"
+            alt="measure performance"
+            className="object-center object-cover mt-4 lg:mt-0 w-20 lg:w-28"
+          />
         </div>
       </div>{" "}
     </>

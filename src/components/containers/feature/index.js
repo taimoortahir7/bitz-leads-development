@@ -8,36 +8,50 @@ const Feature = ({ feature }) => {
     let doc = "";
     if (float === "left") {
       doc = (
-        <>
-          <div className="w-6/12 h-full flex flex-col items-start justify-center">
+        <div className="h-screen lg:h-auto mx-0 lg:mx-4 my-4 lg:my-16 px-8 lg:px-16 flex flex-col lg:flex-row items-start lg:items-center justify-between ">
+          <div className="w-full lg:w-6/12 h-full flex flex-col items-start justify-center ">
             <Title content={title} />
             <Para text={text} />
           </div>
-          <div className="w-6/12 h-full flex flex-col  justify-center items-end">
-            <img src={img.normal} alt={img.normal} />
+          <div className="w-full lg:w-5/12 h-full flex flex-col  justify-center items-start lg:items-end mt-4 lg:mt-0">
+            <img
+              src={img.normal}
+              alt={img.normal}
+              className="hidden lg:block "
+            />
+            <img
+              src={img.mobile}
+              alt={img.mobile}
+              className="block lg:hidden "
+            />
           </div>
-        </>
+        </div>
       );
     } else {
       doc = (
-        <>
-          <div className="w-6/12 h-full flex flex-col items-start justify-center">
-            <img src={img.normal} alt={img.normal} />
+        <div className="h-screen lg:h-auto mx-0 lg:mx-4 my-4 lg:my-16 px-8 lg:px-16 flex flex-col-reverse lg:flex-row items-start lg:items-center justify-between ">
+          <div className="w-full lg:w-5/12 h-full flex flex-col items-start justify-center mt-4 lg:mt-0">
+            <img
+              src={img.normal}
+              alt={img.normal}
+              className="hidden lg:block "
+            />
+            <img
+              src={img.mobile}
+              alt={img.mobile}
+              className="block lg:hidden "
+            />
           </div>
-          <div className="w-6/12 h-full flex flex-col  justify-center items-end">
+          <div className="w-full lg:w-6/12 h-full flex flex-col  justify-center items-start lg:items-end">
             <Title content={title} />
             <Para text={text} />
           </div>
-        </>
+        </div>
       );
     }
     return doc;
   };
-  return (
-    <div className=" m-4 px-16 flex items-center min-h-screen">
-      {renderContent()}
-    </div>
-  );
+  return renderContent();
 };
 
 export default Feature;
