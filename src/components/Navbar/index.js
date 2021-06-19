@@ -16,17 +16,33 @@ const NAV_LINKS = [
 
 const Navbar = () => {
   return (
-    <div className="absolute container flex items-center justify-between px-16 py-4 mt-4 z-50">
+    <div className="absolute container flex items-center justify-between px-8 xl:px-16 py-4 mt-0 lg:mt-4 z-50">
       <div className="">
         <img
           src="/images/logo.png"
           alt="logo"
-          className="object-contain object-center w-full h-16"
+          className="object-contain object-center w-10 lg:w-14"
         />
       </div>
-      <div className="w-1/4 relative flex items-center justify-end">
+      <div className="w-1/4 relative lg:flex items-center justify-end hidden">
         <NavItem path="#pricing" name="Pricing" />
         <NavItem border path="#contact" name="Contact" />
+      </div>
+      <div className="w-1/4 relative flex items-center justify-end lg:hidden space-x-3">
+        <div>
+          <img
+            src="/images/icons/contact-icon.png"
+            alt="contact"
+            className="object-cover object-center w-8"
+          />
+        </div>
+        <div>
+          <img
+            src="/images/icons/menu-icon.png"
+            alt="contact"
+            className="object-cover object-center w-8"
+          />
+        </div>
       </div>
     </div>
   );

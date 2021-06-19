@@ -4,14 +4,14 @@ import { BOOSTER_DATA } from "data/booster-data";
 
 const Boosters = () => {
   return (
-    <div className=" h-full px-8 lg:px-16">
+    <div className=" h-full px-8 xl:px-16">
       <Title content="Booster Packs" />
       <div className="flex flex-col-reverse lg:flex-row items-center mt-8 lg:mt-16 ">
-        <div className="left-content">
+        <div className="left-content lg:pr-24">
           <img src="/images/booster.png" className="hidden lg:block " />
         </div>
-        <div className="right-content">
-          <div className="grid grid-cols-3 gap-8 lg:gap-16">
+        <div className="right-content lg:items-center">
+          <div className="grid grid-cols-3 gap-8 lg:gap-16 w-full lg:w-auto">
             {BOOSTER_DATA.map((item, index) => (
               <React.Fragment key={index.toString()}>
                 <BoosterItem price={item.price} leads={item.leads} />

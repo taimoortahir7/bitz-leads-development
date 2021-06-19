@@ -18,7 +18,9 @@ module.exports = {
         400: "#2c5234",
         500: "#86bc25",
       },
-
+      fontSize: {
+        xxs: "0.5rem",
+      },
       // ...
     },
     extend: {},

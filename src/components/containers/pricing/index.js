@@ -12,7 +12,7 @@ const Pricing = () => {
   }, [optionValue]);
 
   return (
-    <div className="w-full flex flex-col items-start justify-center px-8 mt-8 mb-16 lg:px-16">
+    <div className="w-full flex flex-col items-start justify-center px-8 mt-8 mb-16 xl:px-16">
       <Title content="Pricing" />
       <PricingMobile setValue={setOptionValue} />
       <PricingDesktop />
@@ -35,19 +35,19 @@ const PricingDesktop = () => (
     {PRICING_DATA.map((data, index) => (
       <div
         key={index.toString()}
-        className="transform h-64 border border-solid border-b-8 border-secondary-500 flex flex-col items-center justify-center px-4 transition-all ease-out duration-100 hover:border-secondary-100 hover:scale-105"
+        className="transform lg:h-52 xl:h-64 border border-solid border-b-8 border-secondary-500 flex flex-col items-center justify-center px-4 transition-all ease-out duration-100 hover:border-secondary-100 hover:scale-105"
       >
-        <div className="sm:text-3xl lg:text-4xl font-bold text-center">
+        <div className="text-3xl xl:text-4xl font-bold text-center">
           {data.amount}
         </div>
-        <div className="sm:text-sm lg:text-base font-normal text-center">
+        <div className="text-sm xl:text-base font-normal text-center">
           {data.desc}
         </div>
-        <div className="sm:text-base lg:text-lg font-normal mt-11 font-semibold text-center">
+        <div className="text-base xl:text-lg font-normal mt-11 font-semibold text-center">
           {data.leads}
           {" Leads"}
         </div>
-        <div className="sm:text-xs lg:text-base font-normal text-center mt-4">
+        <div className="sm:text-xs xl:text-base font-normal text-center mt-4">
           {data.contract_period}
         </div>
       </div>
