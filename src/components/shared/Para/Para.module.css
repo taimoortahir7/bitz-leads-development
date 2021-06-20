@@ -4,7 +4,7 @@
   @apply bg-secondary-500;
 }
 .text {
-  @apply text-sm lg:text-base xl:text-xl ml-2 lg:ml-4 xl:ml-6;
+  @apply text-sm lg:text-base xl:text-xl ml-2 lg:ml-4 xl:ml-6 font-normal;
 }
 .text::before {
   content: " ";

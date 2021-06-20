@@ -12,7 +12,7 @@ const Pricing = () => {
   }, [optionValue]);
 
   return (
-    <div className="w-full flex flex-col items-start justify-center px-8 mt-8 mb-16 xl:px-16">
+    <div className="w-full flex flex-col items-start justify-center px-8 mt-8 mb-20 xl:px-16">
       <Title content="Pricing" />
       <PricingMobile setValue={setOptionValue} />
       <PricingDesktop />

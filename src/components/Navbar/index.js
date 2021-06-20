@@ -51,7 +51,7 @@ const Navbar = () => {
 const NavItem = ({ border, path, name }) => {
   return (
     <div
-      className={` px-6 py-2  ${
+      className={` px-6 py-2 text-base font-semibold  ${
         border ? "border border-solid border-secondary-500" : ""
       }`}
     >

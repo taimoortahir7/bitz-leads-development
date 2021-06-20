@@ -11,8 +11,18 @@ const Footer = () => {
           className="object-center object-contain w-8 lg:w-12 "
         />
 
-        <div className="text-xs xl:text-sm mt-4 font-normal hidden lg:block pr-4 lg:pr-0">
-          &copy;{new Date().getFullYear()} BlitzLeads&reg; All rights reserved.
+        <div className="text-xs xl:text-sm mt-4 font-normal hidden lg:block pr-4 lg:pr-0 relative">
+          &copy;{new Date().getFullYear()}&nbsp;
+          <div className="inline mr-4">
+            BlitzLeads
+            <span
+              className="text-sm absolute top-0 leading-3"
+              style={{ fontSize: "10px" }}
+            >
+              ®
+            </span>
+          </div>
+          All rights reserved.
         </div>
         <div
           className=" lg:text-sm font-normal block lg:hidden pr-4 lg:pr-0 text-right"

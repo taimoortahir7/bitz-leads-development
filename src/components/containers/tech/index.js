@@ -14,8 +14,17 @@ const Tech = () => {
         </div>
       </div>
       <div className="right-content">
-        <div className="mt-4 text-normal lg:text-base xl:text-xl font-normal lg:mt-40">
-          BlitzLeads® is an Automated Lead Generation solution for:
+        <div className="mt-4 text-normal lg:text-base xl:text-xl font-normal lg:mt-40 relative">
+          <div className="inline mr-4">
+            BlitzLeads
+            <span
+              className="text-sm absolute top-0"
+              style={{ fontSize: "10px" }}
+            >
+              ®
+            </span>
+          </div>
+          is an Automated Lead Generation solution for:
         </div>
         <div className="text-normal lg:text-base xl:text-xl font-semibold mt-4 lg:mt-8">
           <div className="ml-12 lg:ml-2">
@@ -35,8 +44,18 @@ const Tech = () => {
             Small Businesses and Teams
           </div>
         </div>
-        <div className="mt-2 lg:mt-8 text-normal lg:text-base xl:text-xl font-normal">
-          Leading with metrics,BlitzLeads® provides fully automated
+        <div className="mt-2 lg:mt-8 text-normal lg:text-base xl:text-xl font-normal relative">
+          Leading with metrics,
+          <div className="inline mr-4">
+            BlitzLeads
+            <span
+              className="text-sm absolute top-0  leading-3"
+              style={{ fontSize: "10px" }}
+            >
+              ®
+            </span>
+          </div>
+          provides fully automated
           <br /> Business Development capacity, acting as a mobile force
           <br /> multiplier. Remote Revenue Generation and every stage of
           <br /> the Sales pipeline are addressed through simplified
