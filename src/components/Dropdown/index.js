@@ -53,7 +53,7 @@ const Dropdown = ({ color, data, setValue }) => {
                   {data[selectedItem].contract_period}
                 </span>
               </div>
-              <img src="/images/arrow.png" alt="arrow" />
+              <img src="/images/down-arrow.svg" alt="arrow" />
             </button>
             <div
               ref={popoverDropdownRef}

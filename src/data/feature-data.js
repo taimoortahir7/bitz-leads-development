@@ -8,6 +8,7 @@ export const FEATURE_DATA = [
       mobile: "/images/sections/first-mobile.png",
     },
     float: "left",
+    id: "generate-leads",
   },
   {
     title: "Engage Prospects",
@@ -18,6 +19,7 @@ export const FEATURE_DATA = [
       mobile: "/images/sections/second-mobile.png",
     },
     float: "right",
+    id: "engage-prospects",
   },
   {
     title: "Manage Sales",
@@ -28,6 +30,7 @@ export const FEATURE_DATA = [
       mobile: "/images/sections/third-mobile.png",
     },
     float: "left",
+    id: "manage-sales",
   },
   {
     title: "Negotiate Prices",
@@ -38,6 +41,7 @@ export const FEATURE_DATA = [
       mobile: "/images/sections/fourth-mobile.png",
     },
     float: "right",
+    id: "negotiate-prices",
   },
   {
     title: "Measure Performance",
@@ -48,5 +52,6 @@ export const FEATURE_DATA = [
       mobile: "/images/sections/fifth-mobile.png",
     },
     float: "left",
+    id: "measure-performamce",
   },
 ];

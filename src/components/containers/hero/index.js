@@ -4,35 +4,30 @@ const Hero = () => {
   return (
     <>
       <div className="left-content relative">
-        <div className="text-3xl lg:text-4xl xl:text-5xl  font-bold leading-10 xl:leading-tight">
+        <div className="text-3xl lg:text-4xl xl:text-5xl  font-semibold leading-10 xl:leading-tight">
           <span className="block text-secondary-500 relative">
-            BlitzLeads<span className="text-sm absolute top-0">®</span>
+            BlitzLeads<sup className="text-sm absolute top-0">®</sup>
           </span>
           Remote prospecting <br />
           Powered by AI
         </div>
-        <div className="mt-2 lg:mt-8 text-sm lg:text-base xl:text-lg font-medium relative">
-          <div className="inline mr-4">
+        <div className="mt-4 lg:mt-8 text-sm lg:text-base xl:text-lg font-medium relative">
+          <span className="mr-2">
             BlitzLeads
-            <span
-              className="text-sm absolute top-0  leading-3"
-              style={{ fontSize: "10px" }}
-            >
-              ®
-            </span>
-          </div>
+            <sup>®</sup>
+          </span>
           is built to assist Home-based <br />
           Sales professionals and Teams
         </div>
-        <div className="mt-4 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
+        <div className="mt-8 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
           Create Account
         </div>
-        <div className="text-xs lg:text-sm xl:text-base font-normal mt-3 lg:mt-6">
+        <div className="text-xs lg:text-sm xl:text-base font-normal mt-6 lg:mt-6">
           Already a member?
           <span className="ml-2 text-secondary-500 border-b border-solid border-secondary-500">
             Sign in{" "}
             <img
-              src="/images/icons/Vector.png"
+              src="/images/icons/arrow.svg"
               alt=""
               className="relative inline"
             />
@@ -40,7 +35,7 @@ const Hero = () => {
           </span>
         </div>
       </div>
-      <div className="right-content relative w-full  my-8 lg:my-0">
+      <div className="right-content relative w-full  my-10 lg:my-0">
         <div>
           <img
             src="/images/home-normal.png"

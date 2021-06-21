@@ -22,7 +22,7 @@ const Index = () => {
       </section>
       <section className=" w-full flex flex-col relative">
         {FEATURE_DATA.map((feature, index) => (
-          <div key={index.toString()}>
+          <div key={index.toString()} id={feature.id}>
             <Feature feature={feature} />
           </div>
         ))}

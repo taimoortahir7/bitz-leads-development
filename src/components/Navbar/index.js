@@ -16,12 +16,12 @@ const NAV_LINKS = [
 
 const Navbar = () => {
   return (
-    <div className="absolute container flex items-center justify-between px-8 xl:px-16 py-4 mt-0 lg:mt-4 z-50">
-      <div className="">
+    <div className="absolute bg-black w-full flex items-center justify-between px-8 xl:px-16 py-2 lg:py-4 mt-0 lg:mt-4 z-50">
+      <div className="bg-black">
         <img
-          src="/images/logo.png"
+          src="/images/logo.svg"
           alt="logo"
-          className="object-contain object-center w-10 lg:w-14"
+          className="object-contain object-center w-9 lg:w-12 "
         />
       </div>
       <div className="w-1/4 relative lg:flex items-center justify-end hidden">
@@ -31,16 +31,16 @@ const Navbar = () => {
       <div className="w-1/4 relative flex items-center justify-end lg:hidden space-x-3">
         <div>
           <img
-            src="/images/icons/contact-icon.png"
+            src="/images/icons/contact-icon.svg"
             alt="contact"
             className="object-cover object-center w-8"
           />
         </div>
         <div>
           <img
-            src="/images/icons/menu-icon.png"
+            src="/images/icons/menu-icon.svg"
             alt="contact"
-            className="object-cover object-center w-8"
+            className="object-cover  object-center w-8"
           />
         </div>
       </div>
