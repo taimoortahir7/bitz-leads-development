@@ -35,17 +35,41 @@ const Hero = () => {
           </span>
         </div>
       </div>
-      <div className="right-content relative w-full  my-10 lg:my-0">
-        <div>
-          <img
-            src="/images/home-normal.png"
-            alt="homepage"
-            className="hidden lg:block"
-          />
+      <div className="right-content relative w-full ">
+        <div className="relative top-0 h-full w-full flex items-start">
+          <div
+            className="hidden lg:block relative w-full"
+            style={{ height: "75vh" }}
+          >
+            <span className="absolute w-80 xl:w-96 top-24 xl:top-40 left-44 xl:left-44">
+              <img
+                src="/images/sections/home/2.jpg"
+                className=" object-center object-cover"
+              />
+            </span>
+            <span className="absolute w-64 xl:w-72 top-12 xl:top-24 xl:-left-4">
+              <img
+                src="/images/sections/home/1.jpg"
+                className=" object-center object-cover"
+              />
+            </span>
+            <span className="absolute w-72 xl:w-80 top-72 xl:top-96 -left-8 xl:-left-12">
+              <img
+                src="/images/sections/home/3.jpg"
+                className=" object-center object-cover"
+              />
+            </span>
+            <span className="absolute w-64 xl:w-72 top-64 xl:top-80 left-56 xl:left-60">
+              <img
+                src="/images/sections/home/4.jpg"
+                className=" object-center object-cover"
+              />
+            </span>
+          </div>
           <img
             src="/images/home-mobile.png"
             alt="homepage"
-            className="block lg:hidden absolute inset-x-0"
+            className="block lg:hidden absolute inset-x-0   mt-10 md:mt-40 lg:my-0"
           />
         </div>
       </div>
