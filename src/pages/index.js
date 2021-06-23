@@ -17,7 +17,7 @@ const Index = () => {
       <section className="relative w-full  pt-28 flex px-8 lg:px-8 xl:px-16 flex-col lg:items-center lg:flex-row">
         <Hero />
       </section>
-      <section className="min-h-full w-full flex flex-col lg:flex-row relative my-4 px-8 lg:px-8 xl:px-16">
+      <section className="min-h-full w-full flex flex-col lg:flex-row relative ">
         <Tech />
       </section>
       <section className=" w-full flex flex-col relative">
