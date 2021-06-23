@@ -5,12 +5,14 @@ const Tech = () => {
     <>
       <div className="left-content">
         <Title content="The Technology" />
-        <div className="relative w-4/5 h-2/5 mt-28 hidden lg:block">
-          <img
-            src="/images/tech.png"
-            alt="the technology"
-            className="object-contain object-center invisible lg:visible"
-          />
+        <div className="relative  w-3/5 mt-28 hidden lg:block">
+          <div className=" relative ">
+            <div className="absolute h-3/4 w-5/6 bottom-0 left-0 bg-secondary-500" />
+            <img
+              src="/images/tech-2.jpg"
+              className="hidden lg:block object-center object-cover relative -top-4 left-4"
+            />
+          </div>
         </div>
       </div>
       <div className="right-content">
@@ -21,7 +23,7 @@ const Tech = () => {
           </span>
           is an Automated Lead Generation solution for:
         </div>
-        <div className="text-normal lg:text-base xl:text-xl font-semibold mt-4 lg:mt-8">
+        <div className="text-normal lg:text-base xl:text-xl font-semibold mt-4 lg:mt-6">
           <div className="ml-12 lg:ml-2">
             <img
               src="/images/icons/arrow.svg"
@@ -39,8 +41,8 @@ const Tech = () => {
             Small Businesses and Teams
           </div>
         </div>
-        <div className="mt-2 lg:mt-8 text-normal lg:text-base xl:text-xl font-normal relative">
-          Leading with metrics,
+        <div className="mt-2 lg:mt-6 text-normal lg:text-base xl:text-xl font-normal relative">
+          Leading with metrics,{" "}
           <span className=" mr-2">
             BlitzLeads
             <sup>®</sup>
@@ -51,7 +53,7 @@ const Tech = () => {
           <br /> the Sales pipeline are addressed through simplified
           <br /> functionality.
         </div>
-        <div className="mt-16 relative flex flex-row flex-wrap lg:flex-nowrap justify-center items-center space-x-3">
+        <div className="mt-16 xl:mt-8 relative flex flex-row flex-wrap lg:flex-nowrap justify-center items-center space-x-3">
           <a href="#generate-leads">
             <img
               src="/images/features/Group 25.svg"

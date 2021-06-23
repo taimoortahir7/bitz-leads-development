@@ -42,7 +42,7 @@ const Feature = ({ feature }) => {
               className="block lg:hidden "
             />
           </div>
-          <div className="w-full lg:w-6/12 h-full flex flex-col  justify-center items-start pl-0 lg:pl-20 xl:pl-0 xl:items-end">
+          <div className="w-full lg:w-6/12 h-full flex flex-col  justify-center items-start pl-0 lg:pl-24 xl:pl-40  xl:items-start">
             <Title content={title} />
             <Para text={text} />
           </div>

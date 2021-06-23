@@ -7,8 +7,14 @@ const Boosters = () => {
     <div className=" h-full px-8 xl:px-16">
       <Title content="Booster Packs" />
       <div className="flex flex-col-reverse lg:flex-row items-center mt-8 lg:mt-16 ">
-        <div className="left-content lg:pr-24">
-          <img src="/images/booster.png" className="hidden lg:block " />
+        <div className="left-content lg:pr-24 relative">
+          <div className=" relative ">
+            <div className="absolute h-3/4 w-5/6 bottom-0 left-0 bg-secondary-500" />
+            <img
+              src="/images/booster-2.jpg"
+              className="hidden lg:block object-center object-cover relative -top-4 left-4"
+            />
+          </div>
         </div>
         <div className="right-content lg:items-center">
           <div className="grid grid-cols-3 gap-8 lg:gap-16 w-full lg:w-auto">

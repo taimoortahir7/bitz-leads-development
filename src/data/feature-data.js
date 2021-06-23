@@ -13,7 +13,7 @@ export const FEATURE_DATA = [
   {
     title: "Engage Prospects",
     text:
-      "Easily create automated campaigns, schedule  calls and appointments.\n Use chat, voice or video to communicate",
+      "Easily create automated campaigns, schedule  calls and appointments.\n Use chat, voice or video to communicate.",
     img: {
       normal: "/images/sections/second.png",
       mobile: "/images/sections/second-mobile.png",
@@ -46,7 +46,7 @@ export const FEATURE_DATA = [
   {
     title: "Measure Performance",
     text:
-      "Visualize critical metrics on one dashboard. Evaluate and manage teams.Implement necessary actions.",
+      "Visualize critical metrics on one dashboard. Evaluate and manage teams. Implement necessary actions.",
     img: {
       normal: "/images/sections/fifth.png",
       mobile: "/images/sections/fifth-mobile.png",
