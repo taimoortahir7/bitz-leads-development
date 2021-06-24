@@ -47,9 +47,9 @@ const Hero = () => {
                 className=" object-center object-cover"
               />
             </span>
-            <span className="absolute w-56 xl:w-72 top-4 xl:top-12 xl:-left-4">
+            <span className="absolute w-56 xl:w-72 top-4 xl:top-12 xl:-left-4 border-2 border-solid border-black">
               <img
-                src="/images/sections/home/1.jpg"
+                src="/images/sections/home/1.png"
                 className=" object-center object-cover"
               />
             </span>
