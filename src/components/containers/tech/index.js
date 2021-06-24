@@ -2,7 +2,7 @@ import Title from "components/shared/Title";
 
 const Tech = () => {
   return (
-    <div className=" px-8 lg:px-8 xl:px-16 h-full w-full lg:mb-8 lg:mt-16">
+    <div className=" px-8 lg:px-8 xl:px-16 h-full w-full lg:mb-8 lg:mt-16 custom">
       <Title content="The Technology" />
       <div className="flex flex-col-reverse lg:flex-row items-start mt-8 lg:mt-10 w-full justify-between ">
         <div className="left-content flex-row">

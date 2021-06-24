@@ -26,9 +26,6 @@ html {
   width: 100%;
 }
 
-html,
-body {
-}
 section {
   @apply min-h-screen my-8 lg:my-auto;
 }
@@ -51,4 +48,13 @@ body {
 
 .centered {
   margin: 0 auto !important;
+}
+.custom {
+  margin-top: 0;
+}
+
+@media (max-width: 1664px) and (min-width: 1237px) {
+  .custom {
+    margin-top: 10rem !important;
+  }
 }

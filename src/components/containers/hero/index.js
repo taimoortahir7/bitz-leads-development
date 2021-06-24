@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="left-content relative">
+      <div className="left-content relative justify-start">
         <div className="text-3xl lg:text-4xl xl:text-5xl  font-semibold leading-10 xl:leading-tight">
           <span className="block text-secondary-500 relative">
             BlitzLeads<sup className="text-sm absolute top-0">®</sup>
@@ -36,30 +36,30 @@ const Hero = () => {
         </div>
       </div>
       <div className="right-content relative w-full ">
-        <div className="relative top-0 h-full w-full flex items-start">
-          <div
-            className="hidden lg:block relative w-full"
-            style={{ height: "75vh" }}
-          >
-            <span className="absolute w-72 xl:w-96 top-16 xl:top-40 left-44 xl:left-44">
+        <div
+          className="relative top-0 h-full w-full flex items-start"
+          style={{ height: "75vh" }}
+        >
+          <div className="hidden lg:block relative w-full">
+            <span className="absolute w-72 xl:w-96 top-16 xl:top-28 left-44 xl:left-44">
               <img
                 src="/images/sections/home/2.jpg"
                 className=" object-center object-cover"
               />
             </span>
-            <span className="absolute w-56 xl:w-72 top-4 xl:top-24 xl:-left-4">
+            <span className="absolute w-56 xl:w-72 top-4 xl:top-12 xl:-left-4">
               <img
                 src="/images/sections/home/1.jpg"
                 className=" object-center object-cover"
               />
             </span>
-            <span className="absolute w-60 xl:w-80 top-56 xl:top-96 -left-8 xl:-left-12">
+            <span className="absolute w-60 xl:w-80 top-56 xl:top-80 -left-8 xl:-left-12">
               <img
                 src="/images/sections/home/3.jpg"
                 className=" object-center object-cover"
               />
             </span>
-            <span className="absolute w-52 xl:w-72 top-48 xl:top-80 left-48 xl:left-60">
+            <span className="absolute w-52 xl:w-72 top-48 xl:top-72 left-48 xl:left-60">
               <img
                 src="/images/sections/home/4.jpg"
                 className=" object-center object-cover"
