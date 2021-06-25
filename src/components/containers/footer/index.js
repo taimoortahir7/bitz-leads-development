@@ -10,7 +10,7 @@ const Footer = () => {
           alt="logo"
           className="object-contain object-center w-9 lg:w-12"
         />
-
+        {/* desktop */}
         <div className="text-xs xl:text-sm mt-3 font-normal hidden lg:block pr-4 lg:pr-0 relative">
           &copy;{new Date().getFullYear()}&nbsp;
           <span className="mr-2">
@@ -19,8 +19,9 @@ const Footer = () => {
           </span>
           All rights reserved.
         </div>
+        {/* mobile */}
         <div
-          className=" lg:text-sm font-normal block lg:hidden pr-4 lg:pr-0 text-right"
+          className=" lg:text-sm font-normal block lg:hidden pr-4 lg:pr-0 text-left"
           style={{ fontSize: "10px" }}
         >
           <div className="">
@@ -40,7 +41,7 @@ const MobileFooter = () => (
         src="/images/booster-mobile.png"
         className="w-48 object-contain object-center"
       />
-      <div className="flex flex-col space-y-2">
+      <div className="flex flex-col space-y-2 text-right">
         <div className="text-xs lg:text-base font-normal">Press</div>
         <div className="text-xs lg:text-base font-normal ">Blog</div>
         <div className="text-xs lg:text-base font-normal ">Investors</div>
@@ -51,7 +52,7 @@ const MobileFooter = () => (
         <div className="text-xs lg:text-base font-normal ">
           help@blitzleads.ai
         </div>
-        <div className="sm:text-sm lg:text-base font-normal  flex space-x-4">
+        <div className="sm:text-sm lg:text-base font-normal  flex items-end justify-end space-x-4">
           <img
             src="/images/icons/facebook.png"
             alt="facebook"

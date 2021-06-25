@@ -14,7 +14,7 @@ import { FEATURE_DATA } from "data/feature-data";
 const Index = () => {
   return (
     <Layout>
-      <section className="relative w-full  pt-28 flex px-8 lg:px-8 xl:px-16 flex-col lg:items-center lg:flex-row">
+      <section className="relative w-full  pt-28 flex px-8 lg:px-8 xl:px-16 flex-col lg:items-center sm:flex-row">
         <Hero />
       </section>
       <section className="min-h-full w-full flex flex-col lg:flex-row relative ">
@@ -22,7 +22,11 @@ const Index = () => {
       </section>
       <section className=" w-full flex flex-col relative">
         {FEATURE_DATA.map((feature, index) => (
-          <div key={index.toString()} id={feature.id}>
+          <div
+            key={index.toString()}
+            id={feature.id}
+            className="h-screen my-8 lg:my-0 relative"
+          >
             <Feature feature={feature} />
           </div>
         ))}

@@ -67,7 +67,7 @@ const Dropdown = ({ color, data, setValue }) => {
                 <a
                   href="#"
                   className={
-                    "font-bold text-sm py-2 px-6 text-secondary-500 font-normal block w-full whitespace-nowrap border border-solid border-secondary-500"
+                    "font-bold text-sm py-2 px-6 text-white font-normal block w-full whitespace-nowrap border border-solid border-secondary-500"
                   }
                   onClick={(e) => handleOptionSelect(e, index)}
                   key={index.toString()}

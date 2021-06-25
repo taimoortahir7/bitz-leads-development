@@ -11,7 +11,7 @@ const Hero = () => {
           Remote prospecting <br />
           Powered by AI
         </div>
-        <div className="mt-4 lg:mt-8 text-sm lg:text-base xl:text-lg font-medium relative">
+        <div className="mt-4 sm:mt-2 lg:mt-8 text-sm lg:text-base xl:text-lg font-medium relative">
           <span className="mr-2">
             BlitzLeads
             <sup>®</sup>
@@ -19,10 +19,10 @@ const Hero = () => {
           is built to assist Home-based <br />
           Sales professionals and Teams
         </div>
-        <div className="mt-8 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
+        <div className="mt-8 sm:mt-4 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
           Create Account
         </div>
-        <div className="text-xs lg:text-sm xl:text-base font-normal mt-6 lg:mt-6">
+        <div className="text-xs lg:text-sm xl:text-base font-normal mt-6 sm:mt-4 lg:mt-6">
           Already a member?
           <span className="ml-2 text-secondary-500 border-b border-solid border-secondary-500">
             Sign in{" "}
@@ -69,7 +69,7 @@ const Hero = () => {
           <img
             src="/images/home-mobile.png"
             alt="homepage"
-            className="block lg:hidden absolute inset-x-0   mt-10 md:mt-40 lg:my-0"
+            className="block lg:hidden absolute inset-x-0   mt-10 sm:mt-0 md:mt-40 lg:my-0"
           />
         </div>
       </div>
