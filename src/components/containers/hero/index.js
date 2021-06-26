@@ -19,10 +19,10 @@ const Hero = () => {
           is built to assist Home-based <br />
           Sales professionals and Teams
         </div>
-        <div className="mt-8 sm:mt-4 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
+        <div className="mt-4 sm:mt-4 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
           Create Account
         </div>
-        <div className="text-xs lg:text-sm xl:text-base font-normal mt-6 sm:mt-4 lg:mt-6">
+        <div className="text-xs lg:text-sm xl:text-base font-normal mt-2 sm:mt-4 lg:mt-6">
           Already a member?
           <span className="ml-2 text-secondary-500 border-b border-solid border-secondary-500">
             Sign in{" "}
@@ -36,10 +36,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="right-content relative w-full ">
-        <div
-          className="relative top-0 h-full w-full flex items-start"
-          style={{ height: "75vh" }}
-        >
+        <div className="relative top-0 lg:h-full w-full flex items-start hero--right">
           <div className="hidden lg:block relative w-full">
             <span className="absolute w-72 xl:w-96 top-16 xl:top-28 left-44 xl:left-44">
               <img

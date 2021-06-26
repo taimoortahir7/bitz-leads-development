@@ -2,13 +2,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="px-8 xl:px-16 py-8 flex flex-col items-center justify-center lg:grid  lg:grid-cols-4">
+    <div className="px-8 xl:px-16 py-4 flex flex-col items-center justify-center lg:grid  lg:grid-cols-4">
       <MobileFooter />
-      <div className="w-full flex flex-row-reverse lg:flex-col items-center lg:items-start justify-between xl:justify-start">
+      <div className="w-full flex flex-row-reverse lg:flex-col items-end lg:items-start justify-between xl:justify-start">
         <img
           src="/images/logo.svg"
           alt="logo"
-          className="object-contain object-center w-9 lg:w-12"
+          className="object-contain object-center w-8 lg:w-12"
         />
         {/* desktop */}
         <div className="text-xs xl:text-sm mt-3 font-normal hidden lg:block pr-4 lg:pr-0 relative">
@@ -36,10 +36,10 @@ const Footer = () => {
 };
 const MobileFooter = () => (
   <>
-    <div className="flex flex-row visible lg:hidden mb-8 w-full justify-between">
+    <div className="flex flex-row visible lg:hidden mb-4 w-full justify-between">
       <img
         src="/images/booster-mobile.png"
-        className="w-48 object-contain object-center"
+        className="w-48 object-cover object-center"
       />
       <div className="flex flex-col space-y-2 text-right">
         <div className="text-xs lg:text-base font-normal">Press</div>

@@ -6,7 +6,7 @@ const Boosters = () => {
   return (
     <div className=" h-full px-8 xl:px-16">
       <Title content="Booster Packs" />
-      <div className="flex flex-col-reverse lg:flex-row items-center mt-8 lg:mt-16 ">
+      <div className="flex flex-col-reverse lg:flex-row items-center mt-2 lg:mt-16 ">
         <div className="left-content lg:pr-24 relative">
           <div className=" relative ">
             <div className="absolute h-3/4 w-5/6 bottom-0 left-0 bg-secondary-500" />
@@ -17,7 +17,7 @@ const Boosters = () => {
           </div>
         </div>
         <div className="right-content lg:items-center">
-          <div className="grid grid-cols-3 gap-8 lg:gap-16 w-full lg:w-auto">
+          <div className="grid grid-cols-3 gap-4 lg:gap-16 w-full lg:w-auto">
             {BOOSTER_DATA.map((item, index) => (
               <React.Fragment key={index.toString()}>
                 <BoosterItem price={item.price} leads={item.leads} />

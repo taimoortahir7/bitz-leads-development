@@ -58,3 +58,11 @@ body {
     margin-top: 10rem !important;
   }
 }
+.hero--right {
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .hero--right {
+    height: 75vh !important;
+  }
+}

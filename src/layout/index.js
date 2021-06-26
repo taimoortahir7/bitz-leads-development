@@ -2,7 +2,7 @@ import Navbar from "components/Navbar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-full centered min-h-screen">
+    <div className="w-full centered min-h-screen top-0 absolute">
       <Navbar />
       {children}
       <div

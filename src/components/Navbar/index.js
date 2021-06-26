@@ -16,12 +16,12 @@ const NAV_LINKS = [
 
 const Navbar = () => {
   return (
-    <div className="absolute bg-black w-full flex items-center justify-between px-8 xl:px-16 py-2 lg:py-4 mt-0 lg:mt-4 z-50">
+    <div className="absolute bg-black w-full flex items-center justify-between px-8 xl:px-16 py-4 lg:py-4 mt-0 lg:mt-4 z-50">
       <div className="bg-black">
         <img
           src="/images/logo.svg"
           alt="logo"
-          className="object-contain object-center w-9 lg:w-12 "
+          className="object-contain object-center w-8 lg:w-12 "
         />
       </div>
       <div className="w-1/4 relative lg:flex items-center justify-end hidden">

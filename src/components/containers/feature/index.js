@@ -13,7 +13,7 @@ const Feature = ({ feature }) => {
             <Title content={title} />
             <Para text={text} />
           </div>
-          <div className="w-10/12 sm:w-52 lg:w-5/12 h-full flex flex-col  justify-center items-start lg:items-end mt-4 lg:mt-0">
+          <div className="w-full sm:w-52 lg:w-5/12 h-full flex flex-col  justify-center items-start lg:items-end mt-4 lg:mt-0">
             <img
               src={img.normal}
               alt={img.normal}
@@ -30,7 +30,7 @@ const Feature = ({ feature }) => {
     } else {
       doc = (
         <div className="h-screen lg:h-auto mx-0 lg:mx-4 py-4 lg:py-2 lg:my-16 px-8 xl:px-16 flex flex-col-reverse sm:flex-row items-start lg:items-center justify-between ">
-          <div className="w-10/12 sm:w-52 lg:w-5/12 h-full flex flex-col items-start justify-center mt-4 lg:mt-0">
+          <div className="w-full sm:w-52 lg:w-5/12 h-full flex flex-col items-start justify-center mt-4 lg:mt-0">
             <img
               src={img.normal}
               alt={img.normal}
