@@ -24,7 +24,7 @@ const Footer = () => {
           className=" lg:text-sm font-normal block lg:hidden pr-4 lg:pr-0 text-left"
           style={{ fontSize: "10px" }}
         >
-          <div className="">
+          <div style={{ fontSize: "7.5px" }}>
             BlitzLeads 6918 Corporate Drive Houston TX 77036
           </div>
           &copy;{new Date().getFullYear()} BlitzLeads&reg; All rights reserved.
@@ -39,16 +39,14 @@ const MobileFooter = () => (
     <div className="flex flex-row visible lg:hidden mb-4 w-full justify-between">
       <img
         src="/images/booster-mobile.png"
-        className="w-48 object-cover object-center"
+        className="w-40 object-cover object-center"
       />
       <div className="flex flex-col space-y-2 text-right">
         <div className="text-xs lg:text-base font-normal">Press</div>
         <div className="text-xs lg:text-base font-normal ">Blog</div>
         <div className="text-xs lg:text-base font-normal ">Investors</div>
-        <div className="text-xs lg:text-base font-normal ">Privacy Policy</div>
-        <div className="text-xs lg:text-base font-normal ">
-          Terms &amp; conditions
-        </div>
+        <div className="text-xs lg:text-base font-normal ">Policy</div>
+        <div className="text-xs lg:text-base font-normal ">User Terms</div>
         <div className="text-xs lg:text-base font-normal ">
           help@blitzleads.ai
         </div>

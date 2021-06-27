@@ -14,9 +14,9 @@ const NAV_LINKS = [
   },
 ];
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
-    <div className="absolute bg-black w-full flex items-center justify-between px-8 xl:px-16 py-4 lg:py-4 mt-0 lg:mt-4 z-50">
+    <div className="absolute w-full flex items-center justify-between px-8 xl:px-16 py-4 lg:py-4 mt-0 lg:mt-4 z-50">
       <div className="bg-black">
         <img
           src="/images/logo.svg"
@@ -24,19 +24,21 @@ const Navbar = () => {
           className="object-contain object-center w-8 lg:w-12 "
         />
       </div>
-      <div className="w-1/4 relative lg:flex items-center justify-end hidden">
+      <div className="w-2/4 relative lg:flex items-center justify-end hidden">
         <NavItem path="#pricing" name="Pricing" />
         <NavItem border path="#contact" name="Contact" />
       </div>
       <div className="w-1/4 relative flex items-center justify-end lg:hidden space-x-3">
         <div>
-          <img
-            src="/images/icons/contact-icon.svg"
-            alt="contact"
-            className="object-cover object-center w-8"
-          />
+          <a href="#contact">
+            <img
+              src="/images/icons/contact-icon.svg"
+              alt="contact"
+              className="object-cover object-center w-8"
+            />
+          </a>
         </div>
-        <div>
+        <div onClick={() => toggle()}>
           <img
             src="/images/icons/menu-icon.svg"
             alt="contact"

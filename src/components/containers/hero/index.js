@@ -66,7 +66,7 @@ const Hero = () => {
           <img
             src="/images/home-mobile.png"
             alt="homepage"
-            className="block lg:hidden absolute inset-x-0   mt-10 sm:mt-0 md:mt-40 lg:my-0"
+            className="block lg:hidden absolute inset-x-0 sm:pl-4 lg:pl-0  mt-10 sm:mt-0 md:mt-40 lg:my-0"
           />
         </div>
       </div>
