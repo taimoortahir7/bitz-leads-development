@@ -1,8 +1,23 @@
+const num = [1, 2, 3, 4, 5, 6, 8, 10, 12];
+const whitelist = [];
+num.map((x) => {
+  whitelist.push("translate-x-" + x);
+  whitelist.push("-translate-x-" + x);
+  whitelist.push("translate-y-" + x);
+  whitelist.push("-translate-y-" + x);
+});
+
 module.exports = {
-  purge: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-  ],
+  enabled: process.env.NODE_ENV === "production",
+  purge: {
+    content: [
+      "./src/pages/**/*.{js,ts,jsx,tsx}",
+      "./src/components/**/*.{js,ts,jsx,tsx}",
+    ],
+    options: {
+      whitelist,
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {

@@ -38,7 +38,7 @@ const Navbar = ({ toggle }) => {
             />
           </a>
         </div>
-        <div onClick={() => toggle()}>
+        <div onClick={() => toggle()} className="cursor-pointer">
           <img
             src="/images/icons/menu-icon.svg"
             alt="contact"
