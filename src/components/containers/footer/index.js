@@ -39,7 +39,7 @@ const MobileFooter = () => (
     <div className="flex flex-row visible lg:hidden mb-4 w-full justify-between">
       <img
         src="/images/booster-mobile.png"
-        className="w-40 object-cover object-center"
+        className="w-32 xs:w-40 landscape:w-44 sm:w-40object-cover object-center"
       />
       <div className="flex flex-col space-y-2 text-right">
         <div className="text-xs lg:text-base font-normal">Press</div>

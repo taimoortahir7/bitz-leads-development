@@ -4,14 +4,14 @@ const Hero = () => {
   return (
     <>
       <div className="left-content relative justify-start">
-        <div className="text-3xl lg:text-4xl xl:text-5xl  font-semibold leading-10 xl:leading-tight">
+        <div className="text-2xl landscape:text-2xl sm:text-3xl xs:text-3xl lg:text-4xl xl:text-5xl  font-semibold leading-tight landscape:leading-none xs:leading-10 xl:leading-tight">
           <span className="block text-secondary-500 relative">
             BlitzLeads<sup className="text-sm absolute top-0">®</sup>
           </span>
           Remote prospecting <br />
           Powered by AI
         </div>
-        <div className="mt-4 sm:mt-2 lg:mt-8 text-sm lg:text-base xl:text-lg font-medium relative">
+        <div className="mt-2 xs:mt-4 landscape:mt-2 lg:mt-8 text-xs xs:text-sm sm:text-sm landscape:text-xs lg:text-base xl:text-lg landscape:text-xs font-medium relative">
           <span className="mr-2">
             BlitzLeads
             <sup>®</sup>
@@ -19,10 +19,10 @@ const Hero = () => {
           is built to assist Home-based <br />
           Sales professionals and Teams
         </div>
-        <div className="mt-4 sm:mt-4 lg:mt-8 xl:mt-16 py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
+        <div className="text-xs sm:text-sm landscape:text-xs xs:text-base mt-2 xs:mt-4 landscape:mt-4 lg:mt-8 xl:mt-16 py-3 xs:py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
           Create Account
         </div>
-        <div className="text-xs lg:text-sm xl:text-base font-normal mt-2 sm:mt-4 lg:mt-6">
+        <div className="text-xs lg:text-sm xl:text-base font-normal mt-2 landscape:mt-4 lg:mt-6">
           Already a member?
           <span className="ml-2 text-secondary-500 border-b border-solid border-secondary-500">
             Sign in{" "}
@@ -66,7 +66,7 @@ const Hero = () => {
           <img
             src="/images/home-mobile.png"
             alt="homepage"
-            className="block lg:hidden absolute inset-x-0 sm:pl-4 lg:pl-0  mt-10 sm:mt-0 md:mt-40 lg:my-0"
+            className="block lg:hidden absolute inset-x-0 landscape:pl-4 lg:pl-0 mt-4  xs:mt-10 landscape:mt-0 md:mt-40 lg:my-0"
           />
         </div>
       </div>

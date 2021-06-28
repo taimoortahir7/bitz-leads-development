@@ -43,12 +43,12 @@ const Dropdown = ({ color, data, setValue }) => {
     : (bgColor = "bg-" + color + "-500");
   return (
     <>
-      <div className="flex flex-wrap w-full my-4 ">
+      <div className="flex flex-wrap w-full my-4 sm:m-0 landscape:w-4/6 sm:w-4/6">
         <div className="w-full ">
           <div className="relative  align-middle w-full">
             <button
               className={
-                "flex items-center justify-between text-white text-left font-bold text-sm px-4 py-2 shadow black border border-solid border-secondary-500 w-full"
+                "flex items-center justify-between text-white text-left font-bold text-sm landscape:text-xs sm:text-sm px-4 py-2 shadow black border border-solid border-secondary-500 w-full"
               }
               type="button"
               ref={btnDropdownRef}
@@ -62,12 +62,18 @@ const Dropdown = ({ color, data, setValue }) => {
                 <span>
                   {`${data[selectedItem].amount} ${data[selectedItem].desc} - ${data[selectedItem].leads} Leads`}
                 </span>
-                <span className="font-normal sm:inline block">
-                  <span className="sm:inline hidden">{" - "}</span>
+                <span className="font-normal sm:inline landscape:inline block">
+                  <span className="landscape:inline sm:inline hidden">
+                    {" - "}
+                  </span>
                   {data[selectedItem].contract_period}
                 </span>
               </div>
-              <img src="/images/down-arrow.svg" alt="arrow" />
+              <img
+                src="/images/down-arrow.svg"
+                alt="arrow"
+                className="landscape:w-5 sm:w-5"
+              />
             </button>
             <div
               ref={popoverDropdownRef}
@@ -81,7 +87,7 @@ const Dropdown = ({ color, data, setValue }) => {
                 <a
                   href="#"
                   className={
-                    "font-bold text-sm py-2 px-4 text-white font-normal block w-full whitespace-nowrap border border-solid border-secondary-500"
+                    "font-bold text-sm landscape:text-xs sm:text-sm py-2 px-4 text-white font-normal block w-full whitespace-nowrap border border-solid border-secondary-500"
                   }
                   onClick={(e) => handleOptionSelect(e, index)}
                   key={index.toString()}
@@ -89,8 +95,10 @@ const Dropdown = ({ color, data, setValue }) => {
                   <span>
                     {`${item.amount} ${item.desc} - ${item.leads} Leads`}
                   </span>
-                  <span className="font-normal sm:inline block">
-                    <span className="sm:inline hidden">{" - "}</span>
+                  <span className="font-normal sm:inline landscape:inline block">
+                    <span className="landscape:inline sm:inline hidden">
+                      {" - "}
+                    </span>
                     {item.contract_period}
                   </span>
                 </a>

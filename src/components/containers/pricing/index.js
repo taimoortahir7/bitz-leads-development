@@ -12,7 +12,7 @@ const Pricing = () => {
   }, [optionValue]);
 
   return (
-    <div className="w-full flex flex-col items-start justify-center px-8 mt-8  xl:px-16">
+    <div className="w-full flex flex-col items-start justify-center px-8 mt-8 lg:mb-8  xl:px-16">
       <Title content="Pricing" />
       <PricingMobile setValue={setOptionValue} />
       <PricingDesktop />
@@ -20,10 +20,10 @@ const Pricing = () => {
   );
 };
 const PricingMobile = ({ setValue }) => (
-  <div className="w-full flex flex-col items-center justify-start lg:hidden">
+  <div className="w-full flex flex-col landscape:flex-row sm:flex-row items-center justify-start landscape:justify-between sm:justify-between lg:hidden sm:my-4">
     <DropDown color="teal" data={PRICING_DATA} setValue={setValue} />
     <div
-      className="mt-0 lg:mt-16 py-2 px-3 bg-secondary-500 font-medium"
+      className="mt-0 lg:mt-16 px-4 py-2 text-sm bg-secondary-500 font-medium"
       style={{ maxWidth: "150px" }}
     >
       Choose Package

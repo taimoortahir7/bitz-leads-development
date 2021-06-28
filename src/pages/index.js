@@ -14,7 +14,7 @@ import { FEATURE_DATA } from "data/feature-data";
 const Index = () => {
   return (
     <Layout>
-      <section className="relative w-full  pt-16 sm:pt-14 lg:pt-28 flex px-8 lg:px-8 xl:px-16 flex-col lg:items-center sm:flex-row">
+      <section className="relative w-full  pt-16 landscape:pt-14 lg:pt-28 flex px-8 lg:px-8 xl:px-16 flex-col landscape:flex-row lg:items-center ">
         <Hero />
       </section>
       <section className="min-h-full w-full flex flex-col lg:flex-row relative ">

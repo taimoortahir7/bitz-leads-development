@@ -1,3 +1,4 @@
+const { screens } = require("tailwindcss/defaultTheme");
 const num = [1, 2, 3, 4, 5, 6, 8, 10, 12];
 const whitelist = [];
 num.map((x) => {
@@ -33,10 +34,13 @@ module.exports = {
         400: "#2c5234",
         500: "#86bc25",
       },
-      fontSize: {
-        xxs: "0.5rem",
-      },
+
       // ...
+    },
+    screens: {
+      xs: "320px",
+      landscape: { raw: "(orientation: landscape)" },
+      ...screens,
     },
     extend: {},
   },
