@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -19,20 +20,24 @@ const Hero = () => {
           is built to assist Home-based <br />
           Sales professionals and Teams
         </div>
-        <div className="text-xs sm:text-sm landscape:text-xs xs:text-base mt-2 xs:mt-4 landscape:mt-4 lg:mt-8 xl:mt-16 py-3 xs:py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
-          Create Account
-        </div>
+        <Link href="/auth/signup">
+          <div className=" cursor-pointer text-xs sm:text-sm landscape:text-xs xs:text-base mt-2 xs:mt-4 landscape:mt-4 lg:mt-8 xl:mt-16 py-3 xs:py-4 lg:py-3 xl:py-4 px-6 bg-secondary-500 font-semibold">
+            Create Account
+          </div>
+        </Link>
         <div className="text-xs lg:text-sm xl:text-base font-normal mt-2 landscape:mt-4 lg:mt-6">
           Already a member?
-          <span className="ml-2 text-secondary-500 border-b border-solid border-secondary-500">
-            Sign in{" "}
-            <img
-              src="/images/icons/arrow.svg"
-              alt=""
-              className="relative inline"
-            />
-            {/* <span className="block w-full relative bg-secondary-500 h-px"></span> */}
-          </span>
+          <Link href="/auth/login">
+            <span className=" cursor-pointer ml-2 text-secondary-500 border-b border-solid border-secondary-500">
+              Sign in
+              <img
+                src="/images/icons/arrow.svg"
+                alt=""
+                className="relative inline"
+              />
+              {/* <span className="block w-full relative bg-secondary-500 h-px"></span> */}
+            </span>
+          </Link>
         </div>
       </div>
       <div className="right-content relative w-full ">

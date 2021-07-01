@@ -6,7 +6,7 @@ const Tech = () => {
       <Title content="The Technology" />
       <div className="flex flex-col-reverse lg:flex-row items-start mt-4 landscape:mt-0 sm:mt-4 lg:mt-10 w-full justify-between ">
         <div className="left-content flex-row">
-          <div className="relative  w-3/5 hidden lg:flex mt-8">
+          <div className="relative xl:w-4/5 w-3/5 hidden lg:flex mt-8">
             <div className=" relative ">
               <div className="absolute h-3/4 w-5/6 bottom-0 left-0 bg-secondary-500" />
               <img
@@ -17,7 +17,7 @@ const Tech = () => {
           </div>
         </div>
         <div className="right-content">
-          <div className="mt-0 xs:mt-4 sm:mt-0 text-xs xs:text-sm landscape:text-xs sm:text-sm lg:text-base xl:text-xl font-normal  relative">
+          <div className="mt-0 xs:mt-4 sm:mt-0 xl:mt-4 text-xs xs:text-sm landscape:text-xs sm:text-sm lg:text-base xl:text-xl font-normal  relative">
             <span className=" mr-2">
               BlitzLeads
               <sup>®</sup>

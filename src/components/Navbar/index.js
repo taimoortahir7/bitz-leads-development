@@ -17,16 +17,16 @@ const NAV_LINKS = [
 const Navbar = ({ toggle }) => {
   return (
     <div className="absolute w-full flex items-center justify-between px-8 xl:px-16 py-4 lg:py-4 mt-0 lg:mt-4 z-50">
-      <div className="bg-black">
+      <Link href="/">
         <img
           src="/images/logo.svg"
           alt="logo"
           className="object-contain object-center w-8 lg:w-12 "
         />
-      </div>
+      </Link>
       <div className="w-2/4 relative lg:flex items-center justify-end hidden">
-        <NavItem path="#pricing" name="Pricing" />
-        <NavItem border path="#contact" name="Contact" />
+        <NavItem path="/#pricing" name="Pricing" />
+        <NavItem border path="/#contact" name="Contact" />
       </div>
       <div className="w-1/4 relative flex items-center justify-end lg:hidden space-x-3">
         <div>
