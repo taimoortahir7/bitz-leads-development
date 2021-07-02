@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+import Link from "next/link";
+import Button from "components/Button";
 
 const Loginform = () => {
   const { register, errors, handleSubmit } = useForm();
@@ -57,14 +59,21 @@ const Loginform = () => {
           )}
         </div>
       </div>
+      <div className="mt-4 flex items-end">
+        <div className="text-sm leading-5 text-right w-full">
+          <Link href="/auth/reset-password">
+            <a
+              href="#"
+              className="font-medium text-secondary-500 hover:text-secondary-500 focus:outline-none focus:underline transition ease-in-out duration-150"
+            >
+              Forgot your password?
+            </a>
+          </Link>
+        </div>
+      </div>
       <div className="mt-6">
-        <span className="block w-full rounded-md shadow-sm">
-          <button
-            type="submit"
-            className="px-6 py-2 my-2 w-full text-center text-sm lg:text-normal cursor-pointer border border-secondary-500 border-solid rounded-sm"
-          >
-            Log in
-          </button>
+        <span className="block w-full rounded-md shadow-sm flex justify-center items-center">
+          <Button title="Log in" isSolid className="w-full" />
         </span>
       </div>
     </form>

@@ -2,6 +2,9 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 
+// auth context provider
+import { AuthProvider } from "hooks/useAuth";
+
 // import global styles
 import "styles/global.css";
 
@@ -34,8 +37,10 @@ export default class MyApp extends App {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <link rel="shortcut icon" href="/images/logo.svg" />
-        </Head>{" "}
-        <Component {...pageProps} />{" "}
+        </Head>
+        <AuthProvider>
+          <Component {...pageProps} />
+        </AuthProvider>
       </>
     );
   }
