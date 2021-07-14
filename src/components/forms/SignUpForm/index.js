@@ -1,8 +1,12 @@
 import { useForm } from "react-hook-form";
+import { useAuthProvider } from "hooks/useAuth";
 
 const SignUpForm = () => {
   const { register, errors, handleSubmit } = useForm();
+  const { signUp } = useAuthProvider()
+
   const onSubmit = (data) => {
+    signUp({ name: data.name, email: data.email, password: data.password });
     console.log(data);
   };
   return (
