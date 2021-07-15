@@ -4,7 +4,8 @@ import axios from "axios";
 const authContext = createContext({ user: {} });
 const { Provider } = authContext;
 
-const BASE_URL = 'https://blitzleads.ai' + ':3000'
+const SERVER_PORT = ':3000'
+const BASE_URL = `https://blitzleads.ai${SERVER_PORT}`
 
 export function AuthProvider({ children }) {
     const auth = useAuthProvider();
