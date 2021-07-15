@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Spinner from "components/shared/Spinner";
 
-const Button = ({ isSolid, href, title, isLoading, ...buttonProps }) => {
+const Button = ({ isSolid, href, type, title, isLoading, ...buttonProps }) => {
   return (
-    <button {...buttonProps}>
+    <button {...type} {...buttonProps}>
       {isLoading ? (
         <Spinner width="20" fill="#86bc25" className="animate-spin" />
       ) : (

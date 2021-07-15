@@ -67,50 +67,62 @@ export const useAuthProvider = () => {
     // };
 
     const verifyEmail = async ({ email }) => {
-        let res;
-        console.log(email)
+        let res = { error: false, response: '' }
+
         try {
             let response = await axios.post(`${BASE_URL}/users/check-email-exists`,
                 {
                     email
                 })
 
-            if (response.data) {
-                res = response.data.userExists
-            }
+            if (response.data) res = { error: false, response: response.data.userExists }
         }
 
         catch (error) {
-            res = { error }
+            res = { error: true, response: error }
         }
 
         return res
     }
+
     const getEmailOtp = ({ email, userStatus }) => {
         let res;
         axios.post(`${BASE_URL}/users/get-email-otp`,
             {
                 email, userStatus
             }).then(response => {
-                res = response.sent
+                res = response.data.status
             }).catch(error => res = error)
         return res
     }
-    const signUp = async ({ name, email, password }) => {
-        console.log(name, password, email)
-        const userExists = await verifyEmail({ email });
-        if (!userExists) {
-            axios.post(`${BASE_URL}/users/`,
-                {
-                    email,
-                    password,
-                    name
-                }
-            ).then(response => {
 
-                return { response }
-            }).catch(error => { return { error } })
-        }
+    const verifyEmailOTP = ({ email, otp }) => {
+        let res = { error: false, message: '' }
+        axios.post(`${BASE_URL}/users/verify-email-otp`,
+            {
+                email, otp
+            }).then(response => {
+                if (response.error) res = { error: true, message: response.error }
+                if (response.status) res = { error: false, message: response.status }
+            }).catch(error => res = error)
+        return res
+    }
+    
+    const signUp = async ({ name, email, password, otp, userType, accountType }) => {
+        console.log(name, password, email, otp, userType, accountType)
+        axios.post(`${BASE_URL}/users`,
+            {
+                email,
+                password,
+                name, 
+                otp, 
+                userType, 
+                accountType
+            }
+        ).then(response => {
+
+            return { response }
+        }).catch(error => { return { error } })
     };
 
     const signIn = ({ email, password }) => {
@@ -122,6 +134,7 @@ export const useAuthProvider = () => {
         ).then(response => {
 
             setUser(response.data)
+            return { response }
         }).catch(error => { return { error } })
 
     };
@@ -139,6 +152,9 @@ export const useAuthProvider = () => {
         // user,
         signUp,
         signIn,
+        verifyEmail,
+        getEmailOtp,
+        verifyEmailOTP,
         // signOut,
         // sendPasswordResetEmail,
     };

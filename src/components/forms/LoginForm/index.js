@@ -1,11 +1,19 @@
 import { useForm } from "react-hook-form";
 import Link from "next/link";
 import Button from "components/Button";
+import { useAuthProvider } from "hooks/useAuth";
 
 const Loginform = () => {
   const { register, errors, handleSubmit } = useForm();
+  const { signIn } = useAuthProvider()
+
   const onSubmit = (data) => {
-    console.log(data);
+    signIn({ email: data.email, password: data.password }).then(loginResponse => {
+      if (loginResponse.status === 200) {
+        console.log('loginResponse: ', loginResponse.data)
+        // Navigate to Home Page
+      }
+    })
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -73,7 +81,13 @@ const Loginform = () => {
       </div>
       <div className="mt-6">
         <span className="block w-full rounded-md shadow-sm flex justify-center items-center">
-          <Button title="Log in" isSolid className="w-full" />
+          {/* <Button type="submit" title="Log in" isSolid className="w-full" /> */}
+          <button
+            type="submit"
+            className="border-none bg-secondary-500 px-6 py-2 my-2 text-center text-sm lg:text-normal cursor-pointer"
+          >
+            Log in
+          </button>
         </span>
       </div>
     </form>
