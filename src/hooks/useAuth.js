@@ -4,6 +4,8 @@ import axios from "axios";
 const authContext = createContext({ user: {} });
 const { Provider } = authContext;
 
+const BASE_URL = 'https://blitzleads.ai' + ':3000'
+
 export function AuthProvider({ children }) {
     const auth = useAuthProvider();
     return <Provider value={auth}>{children}</Provider>;
@@ -67,7 +69,7 @@ export const useAuthProvider = () => {
         let res;
         console.log(email)
         try {
-            let response = await axios.post('https://blitzleads.ai/users/check-email-exists',
+            let response = await axios.post(`${BASE_URL}/users/check-email-exists`,
                 {
                     email
                 })
@@ -85,7 +87,7 @@ export const useAuthProvider = () => {
     }
     const getEmailOtp = ({ email, userStatus }) => {
         let res;
-        axios.post('https://blitzleads.ai/users/get-email-otp',
+        axios.post(`${BASE_URL}/users/get-email-otp`,
             {
                 email, userStatus
             }).then(response => {
@@ -97,7 +99,7 @@ export const useAuthProvider = () => {
         console.log(name, password, email)
         const userExists = await verifyEmail({ email });
         if (!userExists) {
-            axios.post('https://blitzleads.ai/users/',
+            axios.post(`${BASE_URL}/users/`,
                 {
                     email,
                     password,
@@ -111,7 +113,7 @@ export const useAuthProvider = () => {
     };
 
     const signIn = ({ email, password }) => {
-        return axios.post('https://blitzleads.ai/users/login',
+        return axios.post(`${BASE_URL}/users/login`,
             {
                 email,
                 password,
